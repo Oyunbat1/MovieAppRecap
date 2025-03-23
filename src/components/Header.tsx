@@ -33,7 +33,7 @@ function Header() {
           className="bg-[var(--foreground-color)] text-[var(--on-foreground-text-color)] h-[80px] fixed top-0 left-0 right-0 flex items-center justify-around  p-[10px]"
         >
           <h1 className="text-xl font-bold">Кино сайт</h1>
-          <div className="flex gap-8 mt-[4px]">
+          <div className="flex gap-8 mt-[2px]">
             {" "}
             {!loading && (
               <div>
@@ -58,7 +58,7 @@ function Header() {
                 </Popover>
               </div>
             )}
-            <div className="mt-[4px]" onClick={ChangeHeaderComponent}>
+            <div className="mt-[2px]" onClick={ChangeHeaderComponent}>
               <div className="bg-[var(--background-color)] w-[26px] rounded-md flex items-center justify-center h-[24px]">
                 {" "}
                 <SearchIcon className="w-[16px] mt-[4px] text-[var(--foreground-color)] pb-[5px]" />
@@ -86,12 +86,12 @@ function Header() {
                   </PopoverTrigger>
                   <PopoverContent className=" text-[var(--on-background-text-color)] mt-[24px] ml-[30px]">
                     <div>
-                      {genre.map((dedail) => (
+                      {genre.map((detail) => (
                         <Button
                           className="h-[18px] bg-[var(--foreground-color)] text-[var(--on-foreground-text-color)] m-[4px] text-[10px]"
-                          key={dedail.id}
+                          key={detail.id}
                         >
-                          {dedail.name}
+                          {detail.name}
                         </Button>
                       ))}
                     </div>
