@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --background-color: #faf6e9;
+  --foreground-color:  #5546e7;
+  --on-background-text-color: #333;
+  --on-foreground-text-color: #fff;
+}
